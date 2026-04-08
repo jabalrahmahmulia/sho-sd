@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afiiliator Jabal Rahmah Mulia</title>
+    <style>
+        /* CSS untuk tata letak halaman */
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Styling untuk Header */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 5%;
+            /* Menambah jarak horizontal sebesar 5% dari lebar layar */
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            height: 60px;
+            /* Tinggi header */
+            box-sizing: border-box;
+            z-index: 10;
+        }
+
+        .header .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .header .logo img {
+            max-height: 40px;
+            display: block;
+        }
+
+        .header .btn-home {
+            background-color: #FF6600;
+            /* Warna hijau khas edukasi/islamik (bisa disesuaikan) */
+            color: #ffffff;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .header .btn-home:hover {
+            background-color: #006b36;
+        }
+
+        /* Styling untuk Iframe */
+        .content-frame {
+            flex: 1;
+            /* Mengisi sisa ruang setelah header */
+            width: 100%;
+            border: none;
+        }
+
+        /* Responsivitas untuk layar kecil */
+        @media (max-width: 600px) {
+            .header {
+                padding: 10px 20px;
+                /* Menambah jarak horizontal untuk layar kecil */
+                height: 50px;
+            }
+
+            .header .logo img {
+                max-height: 30px;
+            }
+
+            .header .btn-home {
+                padding: 6px 12px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Tambahan -->
+    <header class="header">
+        <a href="https://jrm.sch.id" class="logo">
+            <img src="https://jrm.sch.id/wp-content/uploads/2025/03/cropped-header-web-jrm.png" alt="Logo JRM">
+        </a>
+        <a href="https://jrm.sch.id" class="btn-home">Back Home</a>
+    </header>
+
+    <!-- Iframe Content -->
+    <iframe class="content-frame"
+        src="https://script.google.com/macros/s/AKfycbxigZv187zKo0bReHsk3tFzeEz5bjoeYdW-A6YvPTm-zuyYFNOglNsW5pf3r71holl2sQ/exec?page=affiliator"
+        allow="camera; microphone; geolocation">
+        Maaf, browser Anda tidak mendukung iFrame.
+    </iframe>
+
+</body>
+
+</html>
